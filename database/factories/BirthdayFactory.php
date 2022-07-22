@@ -19,7 +19,7 @@ class BirthdayFactory extends Factory
         return [
             'name' => $this->faker->firstName,
             'birth_date' => $this->faker->date,
-            'phone' => $this->faker->phoneNumber
+            'phone' => $this->faker->phoneNumber,
         ];
     }
 }

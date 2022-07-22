@@ -19,14 +19,14 @@ class StoreBirthdayRequest extends FormRequest
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array<string, mixed>
+     * @return array
      */
     public function rules()
     {
         return [
             "name" => "required|max:70",
             "birth_date" => "required",
-            "phone" => "required|string|min:8|max:11"
+            "phone" => "required"
         ];
     }
 }
