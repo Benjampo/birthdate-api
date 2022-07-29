@@ -18,10 +18,10 @@ class BirthdayController extends Controller
     public function index()
     {
         $birthdays = Birthday::all();
-
+        $ordered_birthdays = $birthdays->sortByDesc('birth_date')->values();
         return response()->json([
             'status' => true,
-            'birthdays' => $birthdays
+            'birthdays' => $ordered_birthdays
         ]);
     }
 

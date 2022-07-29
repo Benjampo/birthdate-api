@@ -24,7 +24,7 @@ class StoreBirthdayRequest extends FormRequest
     public function rules()
     {
         return [
-            "name" => "required|max:70",
+            "name" => "required",
             "birth_date" => "required",
             "phone" => "required"
         ];
